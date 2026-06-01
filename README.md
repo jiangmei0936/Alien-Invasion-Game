@@ -19,4 +19,4 @@ C# 开发的休闲射击小游戏
 2. 编译并运行项目即可
 
 ## 项目演示
-https://www.alipan.com/s/vymK2f8ZuRB
+ https://pan.baidu.com/s/1Ls442lbT42bfvGpGEwuXow?pwd=71nr
