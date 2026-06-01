@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA82587D-23AC-4086-99F1-38BBD12FD632}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AIG</RootNamespace>
+    <AssemblyName>AIG</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ucAlien3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucAlien3.Designer.cs">
+      <DependentUpon>ucAlien3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucAlien2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucAlien2.Designer.cs">
+      <DependentUpon>ucAlien2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucAlien1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucAlien1.Designer.cs">
+      <DependentUpon>ucAlien1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucBullet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBullet.Designer.cs">
+      <DependentUpon>ucBullet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShip.Designer.cs">
+      <DependentUpon>ucShip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucTent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucTent.Designer.cs">
+      <DependentUpon>ucTent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Alien.cs" />
+    <Compile Include="Helper\Alien1.cs" />
+    <Compile Include="Helper\Alien2.cs" />
+    <Compile Include="Helper\Alien3.cs" />
+    <Compile Include="Helper\Bullet.cs" />
+    <Compile Include="Helper\Ship.cs" />
+    <Compile Include="Helper\Tent.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\ucAlien3.resx">
+      <DependentUpon>ucAlien3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucAlien2.resx">
+      <DependentUpon>ucAlien2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucAlien1.resx">
+      <DependentUpon>ucAlien1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucBullet.resx">
+      <DependentUpon>ucBullet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShip.resx">
+      <DependentUpon>ucShip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucTent.resx">
+      <DependentUpon>ucTent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALIEN_01_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALIEN_02_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALIEN_03_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHIP_01_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bullet_01_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sound\Blocked.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sound\Destroy.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sound\Fire.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TENT_01_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sound\Eat.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sound\Victory.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sound\Mali.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aether.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
